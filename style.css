@@ -1,0 +1,171 @@
+/* ========================================= */
+/* 1. RESET BÁSICO E FUNDO                   */
+/* ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* Fundo agora é BRANCO */
+    background-color: #FFFFFF; 
+    color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    /* Espaço para a barra de divisão do topo não cobrir o conteúdo */
+    padding-top: 120px; 
+}
+
+/* ========================================= */
+/* 2. CABEÇALHO FIXO (BARRA DE DIVISÃO)      */
+/* ========================================= */
+.site-header {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000; /* Fundo Preto! */
+    padding: 20px 40px; 
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid #FFCC00; /* Detalhe em linha amarela (opcional) */
+}
+
+.site-header .logo {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #FFCC00; /* Logo em Amarelo! */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+/* ========================================= */
+/* 3. ESTRUTURA PRINCIPAL (CARDS AMARELOS)   */
+/* ========================================= */
+.container {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    /* Fundo dos containers agora é AMARELO */
+    background-color: #FFCC00;
+    border-radius: 30px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    border: 3px solid #000000; /* Borda Preta mais grossa */
+}
+
+/* Cabeçalho do Evento */
+.header h1 {
+    color: #000000;
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.header p {
+    color: #222222;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Foto Principal */
+.hero-image {
+    width: 100%;
+    height: 300px;
+    background-color: #000000; 
+    border-radius: 30px;
+
+    /* A imagem puxando direto da pasta do seu site */
+    background-image: url('foto-teste.JPG'); 
+    
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    border: 4px solid #000000; 
+    transition: transform 0.3s ease; 
+}
+
+.hero-image:hover {
+    transform: scale(1.02); 
+}
+
+/* ========================================= */
+/* 4. INSCRIÇÃO E BOTÃO                      */
+/* ========================================= */
+.cta-section h2 {
+    color: #000000;
+    font-size: 2rem;
+    font-style: italic;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.cta-section p {
+    color: #222222;
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.btn-inscrever {
+    display: inline-block;
+    background-color: #000000; /* Botão Preto */
+    color: #FFCC00; /* Letra Amarela */
+    text-decoration: none;
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 50px;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid #000000;
+}
+
+.btn-inscrever:hover {
+    background-color: #333333;
+    color: #FFCC00;
+    transform: scale(1.05) translateY(-2px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* ========================================= */
+/* 5. RODAPÉ                                 */
+/* ========================================= */
+.footer {
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer span {
+    font-weight: bold;
+    color: #000000;
+}
+
+/* ========================================= */
+/* 6. ADAPTAÇÃO PARA CELULARES PEQUENOS      */
+/* ========================================= */
+@media (max-width: 480px) {
+    .site-header { padding: 15px 20px; }
+    .site-header .logo { font-size: 1.5rem; }
+    .header h1 { font-size: 1.8rem; } /* Ajuste no título longo */
+    .hero-image { height: 250px; }
+    .btn-inscrever { font-size: 1.2rem; padding: 12px 30px; }
+}
