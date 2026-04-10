@@ -55,7 +55,7 @@ body {
 }
 
 .card {
-    /* Fundo dos containers agora é AMARELO */
+    /* Fundo dos containers é AMARELO */
     background-color: #FFCC00;
     border-radius: 30px;
     padding: 30px 20px;
@@ -80,18 +80,12 @@ body {
     margin-top: 10px;
 }
 
-/* Foto Principal */
+/* Foto Principal (Cartaz Inteiro) */
 .hero-image {
     width: 100%;
-    height: 300px;
-    background-color: #000000; 
+    height: auto; /* A altura agora se ajusta sozinha para não cortar nada */
+    display: block;
     border-radius: 30px;
-
-    /* A imagem puxando direto da pasta do seu site */
-    background-image: url('foto-teste.JPG'); 
-    
-    background-size: cover;
-    background-position: center;
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
     border: 4px solid #000000; 
     transition: transform 0.3s ease; 
@@ -166,6 +160,5 @@ body {
     .site-header { padding: 15px 20px; }
     .site-header .logo { font-size: 1.5rem; }
     .header h1 { font-size: 1.8rem; } /* Ajuste no título longo */
-    .hero-image { height: 250px; }
     .btn-inscrever { font-size: 1.2rem; padding: 12px 30px; }
 }
