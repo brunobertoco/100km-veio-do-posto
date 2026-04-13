@@ -134,6 +134,12 @@ body {
     transform: scale(1.05) translateY(-2px); 
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
+.btn-inscrever:focus {
+    transform: scale(1.05);
+    background-color: #e6b800; /* Um amarelo um pouco mais escuro, se quiser */
+    outline: 3px solid #000000; /* Cria uma borda forte ao redor do botão para quem usa o teclado */
+    outline-offset: 4px; /* Afasta a borda um pouquinho para ficar elegante */
+}
 
 /* ========================================= */
 /* 5. RODAPÉ                                 */
