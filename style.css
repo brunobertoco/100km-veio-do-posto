@@ -29,19 +29,30 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #000000; /* Fundo Preto! */
+    background-color: #000000; 
     padding: 20px 40px; 
     display: flex;
     align-items: center;
-    border-bottom: 4px solid #FFCC00; /* Detalhe em linha amarela (opcional) */
+    justify-content: center; /* A MÁGICA AQUI: Isso centraliza a div da logo no meio da tela preta */
+    border-bottom: 4px solid #FFCC00; 
 }
 
 .site-header .logo {
+    display: flex; /* Transforma a área da logo em um container flexível */
+    align-items: center; /* Garante que a imagem e o texto fiquem na mesma linha horizontal */
+    gap: 15px; /* Cria um espaço elegante entre a imagem e a primeira letra do texto */
     font-size: 1.8rem;
     font-weight: 900;
-    color: #FFCC00; /* Logo em Amarelo! */
+    color: #FFCC00; 
     letter-spacing: 2px;
     text-transform: uppercase;
+}
+
+/* Tamanho e formatação da imagem do logotipo */
+.img-logo {
+    height: 45px; /* Altura do logotipo. Você pode aumentar ou diminuir esse valor para testar */
+    width: auto;  /* Mantém a proporção da imagem correta para ela não esticar */
+    /* border-radius: 50%; <-- DICA: Apague os símbolos de comentário dessa linha se quiser forçar sua imagem a ficar redonda */
 }
 /* ========================================= */
 /* 3. ESTRUTURA PRINCIPAL (CARDS AMARELOS)   */
