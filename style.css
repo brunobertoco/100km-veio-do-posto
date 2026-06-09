@@ -22,6 +22,19 @@ body {
 }
 
 /* ========================================= */
+/* ESTILO PARA A IMAGEM DA CAMISA LA MAGLIA  */
+/* ========================================= */
+.camisa-img {
+    width: 100%;
+    max-width: 450px; /* Não deixa a imagem ficar gigante em telas maiores */
+    height: auto;
+    border-radius: 20px;
+    border: 3px solid #000000;
+    margin-bottom: 25px; /* Dá um respiro antes do botão */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ========================================= */
 /* 2. CABEÇALHO FIXO (BARRA DE DIVISÃO)      */
 /* ========================================= */
 .site-header {
